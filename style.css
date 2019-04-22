@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:-150px;
+}
+
+#circle{
+margin-top: 40px;
+width: 500px;
+height: 500px;
+background-color: black;
+border-radius: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 30px solid black;
+}
+
+#esquerda{
+    width: 500px;
+    height: 250px;
+    margin-top: -250px;
+}
+
+#direita{
+    width: 500px;
+    height: 250px;   
+    margin-top: -250px;
+}
+
+.green{
+    background-color: green;
+    width: 250px;
+    height: 250px;
+    border-top-left-radius: 100%;
+    opacity: 0.8;
+}
+
+.yellow{
+    background-color:yellow;
+    width: 250px;
+    height: 250px;
+    border-bottom-left-radius: 100%;
+    opacity: 0.8;
+}
+
+.red{
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    border-top-right-radius: 100%;
+    opacity: 0.8;
+}
+
+.blue{
+    background-color: blue;
+    width: 250px;
+    height: 250px;
+    border-bottom-right-radius: 100%;
+    opacity: 0.8;
+}
+
+.piscar{
+    opacity: 1.0;
+    transition: 10s;
+}
+
+#botao{
+    width:150px;
+    height:150px;
+    border-radius:100%;
+    background-color:black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:-350px;
+    z-index:1000;
+}
