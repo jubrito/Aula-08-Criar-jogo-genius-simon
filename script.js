@@ -2,8 +2,7 @@
 sequencia = lista de cores 
 pessoa tenta acertar a sequencia em 10s e se acertar clearInterval, proximo nivel (proximo elemento lista)
 se errar, alert
-*/
-
+*/ 
 let botao = document.querySelector("#botao");
 let btG = document.querySelector(".green");
 let btY = document.querySelector(".yellow");
@@ -11,7 +10,7 @@ let btR = document.querySelector(".red");
 let btB = document.querySelector(".blue");
 
 /*
-let niveis = [{btY},                       //NIVEL 1
+let niveis = [{btY},             //NIVEL 1
     {btY, btG},                  //NIVEL 2   
     {btY, btG, btB},             //NIVEL 3
     {btY, btG, btB, btR},       //NIVEL 4
@@ -29,15 +28,16 @@ let niveis = [
 let indice;
 let nivelAtual;
 function comecar(){
+    nivelAtual = 1;
     for(indice=0; indice<niveis.length; indice++){
-        executarNivel(niveis[i]);
+        executarNivel(niveis[i], i+1);
         armazenarResposta();
     } 
 }
 
 let i=0;
-function executarNivel(nivel){
-    for (i=0; i<nivel[0].length; i++){
+function executarNivel(nivel, nNivel){
+    for (i=0; i<nNivel; i++){
         nivel[i].classList.add("piscar");
     }
 }
